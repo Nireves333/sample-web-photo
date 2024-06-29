@@ -35,12 +35,22 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) and (min-width: 340px) {
   .portfolio-container {
     padding: 50px 20px;
   }
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 701px) {
+  .portfolio-container {
+    padding: 50px 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

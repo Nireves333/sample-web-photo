@@ -38,9 +38,9 @@
   width: 500px;
 }
 
-@media (width <= 1024px) {
+@media (max-width: 1024px) {
   .hero-image {
-    height: 100dvh;
+    height: 100vh;
     object-fit: cover;
   }
 }

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 .about-text {
@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 340px) {
   .about-container {
     flex-direction: column;
   }
@@ -54,5 +54,27 @@
 
   .photo-image {
     max-height: 300px;
+  }
+}
+
+@media (min-height: 1100px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text {
+    margin: 100px 0 0 0;
+    align-items: center;
+  }
+
+  .about-photo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .photo-image {
+    width: 100%;
+    object-fit: fill;
   }
 }
