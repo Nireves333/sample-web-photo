@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sample-web-photo">
       <Header />
       <Routes>
         <Route
